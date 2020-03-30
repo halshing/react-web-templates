@@ -1,9 +1,11 @@
 import React from "react";
-import { Switch, Route, useRouteMatch, Redirect } from "react-router-dom";
+import { Switch, Route, Redirect, useRouteMatch } from "react-router-dom";
 
 // components
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
+import Forums from "./pages/Forums";
+import Resources from "./pages/Resources";
 
 // styles
 import "../styles/App.scss";
@@ -16,6 +18,12 @@ const App = () => {
       <Switch>
         <Route exact path={path}>
           <HomePage />
+        </Route>
+        <Route path={`${path}/forum`}>
+          <Forums />
+        </Route>
+        <Route path={`${path}/resources`}>
+          <Resources />
         </Route>
         <Route path={`${path}/login`}>
           <LoginPage />
