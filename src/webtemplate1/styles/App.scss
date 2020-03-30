@@ -1,3 +1,52 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+}
+
+header {
+  &.appbar {
+    padding: 10px 60px;
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: none;
+
+    .logo {
+      display: flex;
+      height: 100%;
+      align-items: center;
+    }
+
+    .navlinks {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: flex-end;
+
+      button {
+        border-radius: 0;
+
+        &.btn-signup {
+          background-color: #69ce2a;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .navmenu {
+      button::after {
+        content: "\025BE";
+        font-size: 1.5em;
+      }
+
+      .popout {
+        position: absolute;
+        background-color: #ffffff;
+        color: #000000;
+        padding: 10px;
+      }
+    }
+  }
+}
