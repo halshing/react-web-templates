@@ -5,7 +5,8 @@ import { useHistory } from "react-router-dom";
 import Button from "@material-ui/core/Button";
 
 // components
-import MenuItem from "./MenuItem";
+import ForumNav from "./ForumNav";
+import ResourcesNav from "./ResourcesNav";
 
 const NavLinks = () => {
   const history = useHistory();
@@ -13,9 +14,9 @@ const NavLinks = () => {
 
   return (
     <div className="navlinks">
-      <MenuItem title="Forum" menu={() => <div>Forum menu</div>} />
+      <ForumNav />
       <Button onClick={() => goToPage("properties")}>Properties</Button>
-      <MenuItem title="Resources" menu={() => <div>Resources menu</div>} />
+      <ResourcesNav />
       <Button onClick={() => goToPage("login")}>Login</Button>
       <Button className="btn-signup" onClick={() => goToPage("signup")}>
         Sign Up
