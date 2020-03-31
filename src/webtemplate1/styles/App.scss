@@ -4,12 +4,19 @@ $roboto-font: "Roboto", "Helvetica", "Arial", sans-serif;
   box-sizing: border-box;
 }
 
-body {
+html,
+body,
+#root,
+.app,
+.app > div,
+.app > div > div {
   margin: 0;
+  height: 100%;
 }
 
 .app {
   font-family: $roboto-font;
+  height: 100%;
 }
 
 header {
@@ -84,6 +91,7 @@ header {
 footer {
   background-color: #1e2124;
   padding: 10px 100px;
+  height: 100%;
 
   .footer-top {
     border-bottom: 1px solid #999999;
