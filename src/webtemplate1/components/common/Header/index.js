@@ -11,18 +11,20 @@ import NavLinks from "./NavLinks";
 
 const Header = () => {
   return (
-    <AppBar position="static" className="appbar">
-      <Toolbar>
-        <Grid container>
-          <Grid item xs={3}>
-            <Logo />
+    <Grid item xs={12} className="header-override">
+      <AppBar position="static" className="appbar">
+        <Toolbar>
+          <Grid container justify="center" alignItems="center">
+            <Grid item xs={3}>
+              <Logo />
+            </Grid>
+            <Grid item xs>
+              <NavLinks />
+            </Grid>
           </Grid>
-          <Grid item xs>
-            <NavLinks />
-          </Grid>
-        </Grid>
-      </Toolbar>
-    </AppBar>
+        </Toolbar>
+      </AppBar>
+    </Grid>
   );
 };
 

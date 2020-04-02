@@ -92,59 +92,61 @@ const JoinUs = () => (
 
 const Footer = () => {
   return (
-    <footer>
-      <section className="footer-top">
-        <div className="container">
-          <Grid container>
-            {groupLinks.map((value, key) => (
-              <Grid key={key} item xs>
-                <LinkGroup {...value} />
+    <Grid item xs={12}>
+      <footer>
+        <section className="footer-top">
+          <div className="container">
+            <Grid container>
+              {groupLinks.map((value, key) => (
+                <Grid key={key} item xs>
+                  <LinkGroup {...value} />
+                </Grid>
+              ))}
+              <Grid item xs>
+                <JoinUs />
               </Grid>
-            ))}
-            <Grid item xs>
-              <JoinUs />
-            </Grid>
-            <Grid item xs>
-              <div className="footer-app">
-                <Link to="/web1">
-                  <img
-                    src="https://via.placeholder.com/180x360.png?text=Your%20Image%20Here"
-                    title="Placeholder"
-                    alt="Placeholder"
-                  />
-                </Link>
-              </div>
-            </Grid>
-          </Grid>
-        </div>
-      </section>
-      <section className="footer-bottom">
-        <div className="container">
-          <Grid container>
-            <Grid item xs>
-              <div className="footer-bottom-left">
-                <img
-                  src="https://via.placeholder.com/50x50.png?text=Logo"
-                  alt="Your Logo"
-                />
-                <div>
-                  Copyright &copy; Your Company {new Date().getFullYear()} All
-                  rights reserved.
-                  <br />
-                  123 Main Street | City, State 00000
+              <Grid item xs>
+                <div className="footer-app">
+                  <Link to="/web1">
+                    <img
+                      src="https://via.placeholder.com/180x360.png?text=Your%20Image%20Here"
+                      title="Placeholder"
+                      alt="Placeholder"
+                    />
+                  </Link>
                 </div>
-              </div>
+              </Grid>
             </Grid>
-            <Grid item xs>
-              <div className="footer-bottom-right">
-                <div className="phone-number">123-555-6789</div>
-                <div>Open Weekdays 8am - 6pm EST</div>
-              </div>
+          </div>
+        </section>
+        <section className="footer-bottom">
+          <div className="container">
+            <Grid container>
+              <Grid item xs>
+                <div className="footer-bottom-left">
+                  <img
+                    src="https://via.placeholder.com/50x50.png?text=Logo"
+                    alt="Your Logo"
+                  />
+                  <div>
+                    Copyright &copy; Your Company {new Date().getFullYear()} All
+                    rights reserved.
+                    <br />
+                    123 Main Street | City, State 00000
+                  </div>
+                </div>
+              </Grid>
+              <Grid item xs>
+                <div className="footer-bottom-right">
+                  <div className="phone-number">123-555-6789</div>
+                  <div>Open Weekdays 8am - 6pm EST</div>
+                </div>
+              </Grid>
             </Grid>
-          </Grid>
-        </div>
-      </section>
-    </footer>
+          </div>
+        </section>
+      </footer>
+    </Grid>
   );
 };
 

@@ -16,25 +16,30 @@ body,
 
 .app {
   font-family: $roboto-font;
-  height: 100%;
+}
+
+.header-override {
+  height: 0;
 }
 
 header {
   &.appbar {
-    padding: 10px 100px;
+    padding: 5px 100px;
     color: #000000;
     background-color: #ffffff;
     box-shadow: none;
 
     .logo {
       display: flex;
-      height: 100%;
       align-items: center;
+
+      a {
+        display: flex;
+      }
     }
 
     .navlinks {
       display: flex;
-      height: 100%;
       align-items: center;
       justify-content: flex-end;
 
@@ -166,6 +171,36 @@ footer {
         font-size: 1.8em;
         color: #69ce2a;
       }
+    }
+  }
+}
+
+.hero-banner {
+  height: 100%;
+  background-image: url("../images/nice-house.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+
+  .hero-header-text {
+    text-align: center;
+
+    h1 {
+      font-size: 2.5em;
+    }
+  }
+
+  .hero-header-subtext {
+    font-size: 1.5em;
+  }
+
+  .btnHeaderAction {
+    background-color: #eb9903;
+    color: #ffffff;
+    padding: 10px 40px;
+
+    &:hover {
+      text-decoration: none;
     }
   }
 }
