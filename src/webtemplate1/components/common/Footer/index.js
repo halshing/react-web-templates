@@ -7,7 +7,7 @@ import {
   faFacebookSquare,
   faInstagramSquare,
   faTwitterSquare,
-  faYoutubeSquare
+  faYoutubeSquare,
 } from "@fortawesome/free-brands-svg-icons";
 
 // material ui
@@ -17,46 +17,46 @@ const groupLinks = [
   {
     title: "Explore",
     links: [
-      { name: "For Sale", path: "/investment-property" },
-      { name: "Community", path: "/area" },
-      { name: "Find Companies", path: "/find-companies" },
-      { name: "Find Members", path: "/find-members" },
-      { name: "Real Estate Forum", path: "/forum" }
-    ]
+      { name: "For Sale", path: "investment-property" },
+      { name: "Community", path: "area" },
+      { name: "Find Companies", path: "find-companies" },
+      { name: "Find Members", path: "find-members" },
+      { name: "Real Estate Forum", path: "forum" },
+    ],
   },
   {
     title: "Company",
     links: [
-      { name: "Leadership", path: "/team/leadership" },
-      { name: "Contact", path: "/team/contact" },
-      { name: "Terms of Use", path: "/terms" },
-      { name: "Privacy Policy", path: "/privacy" }
-    ]
+      { name: "Leadership", path: "team/leadership" },
+      { name: "Contact", path: "team/contact" },
+      { name: "Terms of Use", path: "terms" },
+      { name: "Privacy Policy", path: "privacy" },
+    ],
   },
   {
     title: "Insight",
     links: [
-      { name: "Articles", path: "/resources/articles" },
-      { name: "Webinars", path: "/resources/webinars" },
-      { name: "Show", path: "/resources/show" },
-      { name: "Podcast", path: "/resources/podcast" }
-    ]
+      { name: "Articles", path: "resources/articles" },
+      { name: "Webinars", path: "resources/webinars" },
+      { name: "Show", path: "resources/show" },
+      { name: "Podcast", path: "resources/podcast" },
+    ],
   },
   {
     title: "Funding",
     links: [
-      { name: "Private Funding", path: "/private-funding" },
-      { name: "Lenders Sign Up", path: "/lenders-sign-up" },
-      { name: "Affliates", path: "/affiliates" }
-    ]
-  }
+      { name: "Private Funding", path: "private-funding" },
+      { name: "Lenders Sign Up", path: "lenders-sign-up" },
+      { name: "Affliates", path: "affiliates" },
+    ],
+  },
 ];
 
 const socialLinks = [
   { name: "Facebook", icon: faFacebookSquare, url: "https://facebook.com" },
   { name: "Instagram", icon: faInstagramSquare, url: "https://instagram.com" },
   { name: "Twitter", icon: faTwitterSquare, url: "https://twitter.com" },
-  { name: "Youtube", icon: faYoutubeSquare, url: "https://youtube.com" }
+  { name: "Youtube", icon: faYoutubeSquare, url: "https://youtube.com" },
 ];
 
 const LinkGroup = ({ title, links }) => (
@@ -65,7 +65,7 @@ const LinkGroup = ({ title, links }) => (
     <ul>
       {links.map((val, key) => (
         <li key={key}>
-          <Link to={val.path}>{val.name}</Link>
+          <Link to={`web1/${val.path}`}>{val.name}</Link>
         </li>
       ))}
     </ul>
