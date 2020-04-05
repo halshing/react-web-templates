@@ -1,4 +1,5 @@
 $roboto-font: "Roboto", "Helvetica", "Arial", sans-serif;
+$green-theme: #69ce2a;
 
 * {
   box-sizing: border-box;
@@ -16,10 +17,6 @@ body,
 
 .app {
   font-family: $roboto-font;
-}
-
-.header-override {
-  height: 0;
 }
 
 header {
@@ -47,7 +44,7 @@ header {
         border-radius: 0;
 
         &.btn-signup {
-          background-color: #69ce2a;
+          background-color: $green-theme;
           color: #ffffff;
         }
       }
@@ -177,6 +174,7 @@ footer {
 
 .hero-banner {
   height: 100%;
+  padding: 20px 0;
   background-image: url("../images/nice-house.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -189,18 +187,68 @@ footer {
       font-size: 2.5em;
     }
   }
+  .info-card-container {
+    padding: 0 200px;
+
+    .info-card-link {
+      &:hover {
+        text-decoration: none;
+      }
+      .info-card {
+        height: 240px;
+        margin: 0 15px;
+        border-bottom: 2px solid $green-theme;
+        transition: transform 0.7s linear;
+
+        &:hover {
+          transform: scale(1.1);
+          border-bottom: 3px solid $green-theme;
+        }
+
+        .info-card-content {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          padding: 16px;
+
+          i {
+            color: $green-theme;
+            font-size: 40px;
+          }
+        }
+
+        .info-card-gobtn {
+          border: 1px solid black;
+          display: inline-block;
+          height: 40px;
+          width: 40px;
+          line-height: 38px;
+          padding: 0 14px;
+          border: 2px solid #f4f4f4;
+          border-radius: 50%;
+          color: $green-theme;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16),
+            0 2px 10px rgba(0, 0, 0, 0.12);
+        }
+      }
+    }
+  }
 
   .hero-header-subtext {
     font-size: 1.5em;
+    padding: 30px 0;
   }
 
   .btnHeaderAction {
     background-color: #eb9903;
     color: #ffffff;
-    padding: 10px 40px;
+    padding: 15px 50px;
+    font-weight: bold;
+    transition: background-color 0.3s linear;
 
     &:hover {
       text-decoration: none;
+      background-color: #ffb900;
     }
   }
 }

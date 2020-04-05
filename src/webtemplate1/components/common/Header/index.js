@@ -11,7 +11,7 @@ import NavLinks from "./NavLinks";
 
 const Header = () => {
   return (
-    <Grid item xs={12} className="header-override">
+    <Grid item xs={12}>
       <AppBar position="static" className="appbar">
         <Toolbar>
           <Grid container justify="center" alignItems="center">
