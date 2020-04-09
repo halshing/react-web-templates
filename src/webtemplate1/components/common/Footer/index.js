@@ -107,7 +107,7 @@ const Footer = () => {
               </Grid>
               <Grid item xs>
                 <div className="footer-app">
-                  <Link to="/web1">
+                  <Link to="./web1">
                     <img
                       src="https://via.placeholder.com/180x360.png?text=Your%20Image%20Here"
                       title="Placeholder"

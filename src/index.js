@@ -4,7 +4,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect
+  Redirect,
 } from "react-router-dom";
 
 // web templates
@@ -15,15 +15,15 @@ import App from "./main/components/App";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
-        <Route path="/web1">
+        <Route path="./web1">
           <WebTemplate1 />
         </Route>
-        <Route exact path="/">
+        <Route exact path="./">
           <App />
         </Route>
-        <Redirect to="/" />
+        <Redirect to="./" />
       </Switch>
     </Router>
   </React.StrictMode>,

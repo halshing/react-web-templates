@@ -8,16 +8,16 @@ const PopoutMenu = () => {
   return (
     <ul>
       <li>
-        <Link to="/web1/resources/articles">Articles</Link>
+        <Link to="./web1/resources/articles">Articles</Link>
       </li>
       <li>
-        <Link to="/web1/resources/find-investors">Find Investors</Link>
+        <Link to="./web1/resources/find-investors">Find Investors</Link>
       </li>
       <li>
-        <Link to="/web1/resources/calculators">Calculators</Link>
+        <Link to="./web1/resources/calculators">Calculators</Link>
       </li>
       <li>
-        <Link to="/web1/resources/webinars">Webinars</Link>
+        <Link to="./web1/resources/webinars">Webinars</Link>
       </li>
     </ul>
   );

@@ -11,7 +11,7 @@ const App = () => {
 
       <ul>
         <li>
-          <Link to="/web1">Web Template 1</Link>
+          <Link to="./web1">Web Template 1</Link>
         </li>
       </ul>
     </div>
