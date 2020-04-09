@@ -33,7 +33,7 @@ const ResourcesPage = () => {
             <Route exact path={`${path}/webinars`}>
               <UnderConstruction />
             </Route>
-            <Redirect to="./web1" />
+            <Redirect to="/web1" />
           </Switch>
         </Grid>
         <Grid item xs={12}>

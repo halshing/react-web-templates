@@ -68,7 +68,7 @@ const HeroBanner = () => {
                 icon={() => <FontAwesomeIcon icon={faHouseUser} />}
                 title="Private Lenders"
                 subtext="A marketplace for private non-bank lenders"
-                path="./web1"
+                path="/web1"
               />
             </Grid>
             <Grid item xs>
@@ -76,7 +76,7 @@ const HeroBanner = () => {
                 icon={() => <FontAwesomeIcon icon={faSearchDollar} />}
                 title="Pre-MLS"
                 subtext="Properties not available to the masses"
-                path="./web1"
+                path="/web1"
               />
             </Grid>
             <Grid item xs>
@@ -84,7 +84,7 @@ const HeroBanner = () => {
                 icon={() => <FontAwesomeIcon icon={faHandHoldingUsd} />}
                 title="Real Estate Investors"
                 subtext="Connect with Real Estate Investors"
-                path="./web1"
+                path="/web1"
               />
             </Grid>
           </Grid>
@@ -98,7 +98,7 @@ const HeroBanner = () => {
         </Grid>
         <Grid item xs={12}>
           <Box display="flex" justifyContent="center">
-            <Link component={RouterLink} to="./web1" className="btnHeaderAction">
+            <Link component={RouterLink} to="/web1" className="btnHeaderAction">
               Join Us Today
             </Link>
           </Box>

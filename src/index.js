@@ -17,13 +17,13 @@ ReactDOM.render(
   <React.StrictMode>
     <Router basename={process.env.PUBLIC_URL}>
       <Switch>
-        <Route path="./web1">
+        <Route path="/web1">
           <WebTemplate1 />
         </Route>
-        <Route exact path="./">
+        <Route exact path="/">
           <App />
         </Route>
-        <Redirect to="./" />
+        <Redirect to="/" />
       </Switch>
     </Router>
   </React.StrictMode>,

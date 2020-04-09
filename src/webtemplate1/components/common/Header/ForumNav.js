@@ -8,22 +8,22 @@ const PopoutMenu = () => {
   return (
     <ul>
       <li>
-        <Link to="./web1/forum/product-reviews">Product Reviews</Link>
+        <Link to="/web1/forum/product-reviews">Product Reviews</Link>
       </li>
       <li>
-        <Link to="./web1/forum/tax-lien-investing">Tax Lien Investing</Link>
+        <Link to="/web1/forum/tax-lien-investing">Tax Lien Investing</Link>
       </li>
       <li>
-        <Link to="./web1/forum/general-rei">General REI</Link>
+        <Link to="/web1/forum/general-rei">General REI</Link>
       </li>
       <li>
-        <Link to="./web1/forum/training">Training</Link>
+        <Link to="/web1/forum/training">Training</Link>
       </li>
       <li>
-        <Link to="./web1/forum/private-money">Private Money</Link>
+        <Link to="/web1/forum/private-money">Private Money</Link>
       </li>
       <li>
-        <Link to="./web1/forum/finding-deals">Finding Deals</Link>
+        <Link to="/web1/forum/finding-deals">Finding Deals</Link>
       </li>
     </ul>
   );
